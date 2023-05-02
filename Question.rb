@@ -1,6 +1,3 @@
-randomInt1 = (rand*21).to_i
-randomInt2 = (rand*21).to_i
-
 class Question 
   attr_accessor :first_num, :second_num, :answer
 
@@ -14,12 +11,7 @@ class Question
   end
 
   def ask_question
-    puts "What does #{@first_num} plus #{@second_num} equal to?"
+    print "What does #{@first_num} plus #{@second_num} equal to? "
   end
 end
-
-q = Question.new(randomInt1, randomInt2)
-
-puts q.ask_question
-puts q.add_numbers
 
