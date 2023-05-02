@@ -1,9 +1,8 @@
 class Question 
-  attr_accessor :first_num, :second_num, :answer
 
-  def initialize(first, second)
-    @first_num = first
-    @second_num = second
+  def initialize()
+    @first_num = (rand*21).to_i
+    @second_num = (rand*21).to_i
   end
   
   def add_numbers
